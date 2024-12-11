@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-Medium.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Spectal SC";
+    src: url("../assets/fonts/Spectralscsemibold.ttf");
+    font-weight: bold;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #d5d9da;
+}
+
+.font-size-0 {
+    font-size: 0;
+}
+
+.inline-block-middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "Spectral SC";
+    color: rgb(47, 40, 34);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* MAIN IMAGE */
+.main-image {
+    background-image: url("../assets/images/main.png");
+    background-position: center;
+    background-size: cover;
+    height: 811px;
+    position: relative;
+}
+
+.main-image img {
+    position: sticky;
+    top: 20px;
+    left: 750px;
+}
+
+
+/* HEADER */
+.header {
+    background-color: #dde0db;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.menu {
+    margin-left: 354px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 28px;
+}
+
+.menu a {
+    font-size: 16px;
+    color: rgb(70, 80, 85);
+    text-decoration: none;
+}
+
+.header-actions {
+    margin-left: 94px;
+}
+
+.button {
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 1000px;
+    cursor: pointer;
+    border: 0;
+    width: 205px;
+}
+
+.button.button-transparent {
+    color: rgb(121, 136, 144);
+    background-color: transparent;
+    border: 1px solid #818282;
+}
+
+
+/* GALLERY */
+.gallery {
+    padding: 102px 0 55px;
+}
+
+.gallery h2 {
+    margin-bottom: 54px;
+}
+
+.gallery-description {
+    font-size: 18px;
+    color: rgb(62, 52, 44);
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.gallery-items {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.gallery-item {
+    margin: 12px 11px;
+    width: 384px;
+    height: 290px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.gallery-item.gallery-item-big {
+    width: 792px;
+}
+
+.gallery-text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.gallery-eye {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.gallery-eye img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-item:hover .gallery-eye {
+    display: block;
+    cursor: pointer;
+}
+
+
+/* TOURS */
+.tours {
+    padding: 54px 0 88px;
+}
+
+.tours h2 {
+    margin-bottom: 50px;
+}
+
+.tours-items {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.tour-item {
+    margin: 0 12px;
+    max-width: 384px;
+    position: relative;
+}
+
+.tour-item-info {
+    background-color: #31393f;
+    padding: 22px 22px 40px;
+    text-align: center;
+}
+
+.tour-item-text {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin-bottom: 37px;
+}
+
+.button.button-fill {
+    font-size: 18px;
+    color: rgb(37, 41, 43);
+    background-color: #da8246;
+}
+
+.button.button-fill:hover {
+    box-shadow: 0px 4px 14px 1px rgba(217, 149, 103, 0.8);
+}
+
+.fix-block {
+    width: 46px;
+    height: 46px;
+    background-color: #da8246;
+    text-align: center;
+    line-height: 46px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fix-block img {
+    vertical-align: middle;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #31393f;
+    padding: 54px 0 49px;
+}
+
+.footer .container {
+    position: relative;
+}
+
+.contacts {
+    text-align: center;
+    position: absolute;
+    right: 0;
+}
+
+.contacts h3 {
+    font-size: 18px;
+    color: rgb(167, 185, 197);
+    padding-bottom: 15px;
+}
+
+.contacts p {
+    font-size: 14px;
+    color: rgb(131, 145, 156);
+    line-height: 1.2;
+    padding-bottom: 7px;
+}
